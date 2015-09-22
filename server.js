@@ -18,7 +18,9 @@ var app = express();
 // app.set('view engine', 'hjs');
 
 // Database 
-mongoose.connect('mongodb://localhost:27017/carsTest');
+mongoose.connect('mongodb://carissuesapp@gmail.com:builtwithnode0213@ds051953.mongolab.com:51953/carissues');
+
+//mongodb://localhost:27017/carsTest
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
