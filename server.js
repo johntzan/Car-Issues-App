@@ -18,8 +18,14 @@ var app = express();
 // app.set('view engine', 'hjs');
 
 // Database 
-mongoose.connect('mongodb://carissuesapp@gmail.com:builtwithnode0213@ds051863.mongolab.com:51863/heroku_2w2xr5ds');
+//mongoose.connect('mongodb://carissuesapp@gmail.com:builtwithnode0213@ds051863.mongolab.com:51863/heroku_2w2xr5ds');
 //mongodb://localhost:27017/carsTest
+
+mongoose.connect(process.env.MONGOLAB_URI, function (error) {
+    if (error) console.error(error);
+    else console.log('mongo connected');
+});
+
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
