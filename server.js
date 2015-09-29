@@ -1,4 +1,5 @@
 var express = require('express');
+require('newrelic');
 var path = require('path');
 var mongoose = require('mongoose');
 var favicon = require('serve-favicon');
