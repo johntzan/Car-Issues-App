@@ -1,0 +1,168 @@
+ body{
+    background: url("/imgs/footer_lodyas.png");
+    }
+    .jumbotron{
+    background: url("/imgs/debut_dark.png");
+    color: #F4F4F4;
+    text-shadow: 2px 3px 3px #000;
+    }
+    select{
+    height: 30px;
+    margin: 5px;
+    color: #46494C;
+    }
+    p#headline{
+    font-size: 2.2em;
+    }
+    #headline_text, #headline{
+    font-size: 1.3em;
+    font-weight: bold;
+    text-shadow: 2px 3px 2px #000;
+    color: #F4F4F4;
+    padding-left: 20px;
+    }
+    h4{
+    color: #F4F4F4;
+    font-weight: bold;
+    text-shadow: 2px 3px 2px #000;
+    padding-left: 20px;
+    }
+    select, option{
+    width: 150px;
+    }
+    #makes_div, #models_div, #years_div{
+    width: auto;
+    padding-top: 10px;
+    }
+    td{
+    font-size:1.1em;
+    }
+    th{
+    font-size:1.2em;
+    color: #F4F4F4;
+    }
+    #no_issues{
+    font-size: 1.4em;
+    text-align: center;
+    margin:10px 0px;
+    padding: 40px 35px;
+    color: #46494C;
+    background: -webkit-linear-gradient(#F4F4F4, #C5C3C6); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#F4F4F4, #C5C3C6); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#F4F4F4, #C5C3C6); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#F4F4F4, #C5C3C6); /* Standard syntax */
+    border: -webkit-border-radius: 20px;
+    border: -moz-border-radius: 20px;
+    border-radius: 20px;
+    }
+    td#styles_options:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #1985A1; /*off-blue*/
+    }
+    #styles_div, #issues_div{
+    margin: 0px 20px;
+    padding: 15px 35px 15px;
+    }
+    #styles_div{
+      border-bottom: 2px solid #F4F4F4;
+    }
+    #styles_div.ng-hide-remove, #issues_div.ng-hide-remove{
+    -webkit-animation: slideInUp 0.5s;
+    animation: slideInUp 0.5s;
+    }
+    #styles_div.ng-hide-add, #issues_div.ng-hide-add{
+    --webkit-animation: 0.5s slideOutDown;
+    animation: 0.5s slideOutDown;
+    }
+    select.form-control{
+    background-color: #F4F4F4;
+    text-align: left;
+    font-size: 1.2em;
+    color: #46494C;
+    }
+    .btn{
+    margin: 20px;
+    font-size: 1.2em;
+    }
+    .alert-success{
+      background-color: #2A9FD6;
+      border-color: #2A9FD6;
+      margin-left: 20px;
+    }
+    .alert{
+      margin-bottom: 0px;
+    }
+    .alert>p{
+      font-size: 1.05em;
+    }
+    #selections_div{
+    margin:15px 20px;
+    padding: 50px 35px 60px;
+    background: -webkit-linear-gradient(#4C5C68, #46494C); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#4C5C68, #46494C); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#4C5C68, #46494C); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4C5C68, #46494C); /* Standard syntax */
+    border: -webkit-border-radius: 20px;
+    border: -moz-border-radius: 20px;
+    border-radius: 20px;
+    }
+    .table-striped>tbody>tr:nth-child(odd)>td{
+    background-color: #F4F4F4;
+    color: #46494C;
+    }
+    .table-striped>tbody>tr:nth-child(odd)>th {
+    color: #F4F4F4;
+    }
+    .table-striped>tbody>tr:nth-child(even)>td{
+    background-color: #46494C;
+    color: #F4F4F4;
+    }
+    .table-striped>thead>tr{
+    background-color: #46494C;
+    color: #F4F4F4;
+    }
+    #votes{
+    }
+    .modal-content{
+    background-color: #F4F4F4;
+      color: #46494C;
+    }
+    #modalText, .modal-title{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #46494C;
+    padding-left: 0px;
+    }
+    html, body {
+    height: 100%;
+    }
+    .container {
+    min-height: 100%;
+    }
+    #main {
+    padding-bottom:150px; /* this needs to be bigger than footer height*/
+    }
+    .footer {
+    color: #F4F4F4;
+    position: relative;
+    margin-top: -250px; /* negative value of footer height */
+    height: 100px;
+    clear:both;
+    padding-top:200px;
+    text-align: center;
+    }
+    .badge#votes_negative{
+      background-color: #D63230;
+    }
+    .voteBtns{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    }

@@ -139,7 +139,7 @@ app.controller('carController', ['$scope', '$http',
     }
 
     // get all the makes when site loads
-    $http.get('https://api.edmunds.com/api/vehicle/v2/makes?&fmt=json&api_key=mexvxqeke9qmhhawsfy8j9qd&view=full')
+    $http.get('https://api.edmunds.com/api/vehicle/v2/makes?&fmt=json&api_key=h6vybwk6ujptu6xcreuvajk9&view=full')
       .then(function(response) {
         $scope.makes = response.data.makes;
         $scope.resetDropDown();
@@ -151,7 +151,7 @@ app.controller('carController', ['$scope', '$http',
     $scope.getModels = function(makeName) {
       console.log(makeName);
 
-      $http.get('https://api.edmunds.com/api/vehicle/v2/' + makeName + '/models?fmt=json&api_key=mexvxqeke9qmhhawsfy8j9qd&view=full')
+      $http.get('https://api.edmunds.com/api/vehicle/v2/' + makeName + '/models?fmt=json&api_key=h6vybwk6ujptu6xcreuvajk9&view=full')
         .then(function(response) {
           console.log(response.data.models);
           $scope.models = response.data.models;
@@ -166,7 +166,7 @@ app.controller('carController', ['$scope', '$http',
       $scope.resetCar();
       $scope.resetYears();
       if (makeModels != null)
-        $http.get('https://api.edmunds.com/api/vehicle/v2/' + makeName + '/' + makeModels + '/years?&fmt=json&api_key=mexvxqeke9qmhhawsfy8j9qd')
+        $http.get('https://api.edmunds.com/api/vehicle/v2/' + makeName + '/' + makeModels + '/years?&fmt=json&api_key=h6vybwk6ujptu6xcreuvajk9')
         .then(function(response) {
           console.log(response.data.years);
           $scope.years = response.data.years;
@@ -182,7 +182,7 @@ app.controller('carController', ['$scope', '$http',
       console.log(makeYears + ' ' + makeName + ' ' + makeModels);
       $scope.resetCar();
       if (makeModels != null || makeYears != null)
-        $http.get('https://api.edmunds.com/api/vehicle/v2/' + makeName + '/' + makeModels + '/' + makeYears + '/styles?&fmt=json&api_key=mexvxqeke9qmhhawsfy8j9qd')
+        $http.get('https://api.edmunds.com/api/vehicle/v2/' + makeName + '/' + makeModels + '/' + makeYears + '/styles?&fmt=json&api_key=h6vybwk6ujptu6xcreuvajk9')
         .then(function(response) {
           console.log(response.data.styles);
           $scope.styles = response.data.styles;
