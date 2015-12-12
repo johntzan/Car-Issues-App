@@ -14,14 +14,6 @@ var Car = require('./models/car.model');
 var app = express();
 
 
-// view engine setup |||||||||||||||||||| Using regular html to view pages.
-// app.set('views', path.join(__dirname, 'views'));
-// app.set('view engine', 'hjs');
-
-// Database 
-//mongoose.connect('mongodb://carissuesapp@gmail.com:builtwithnode0213@ds051863.mongolab.com:51863/heroku_2w2xr5ds');
-//mongodb://localhost:27017/carsTest
-
 var options = { server: { socketOptions: { connectTimeoutMS: 30000 }}};
 
 mongoose.connect(process.env.MONGOLAB_URI, options, function (error) {
